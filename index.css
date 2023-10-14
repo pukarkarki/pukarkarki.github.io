@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+  .info {
+    margin-top: 150px;
+  }
+  .publication {
+    margin-top: 50px;
+  }
+
+  .teaching {
+    margin-top: -10px;
+  }
+
+  .projects {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .info {
+    margin-top: 150px;
+  }
+  .publication {
+    margin-top: 50px;
+  }
+
+  .teaching {
+    margin-top: 100px;
+  }
+
+  .projects {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .info {
+    margin-top: 150px;
+  }
+  .publication {
+    margin-top: 50px;
+  }
+
+  .teaching {
+    margin-top: 100px;
+  }
+
+  .projects {
+    margin-top: -100px;
+  }
+}
