@@ -221,6 +221,21 @@
           <h2 id="projects">Projects</h2>
           <ul>
             <li>
+              <strong><a href="https://nepaliocr.streamlit.app/">Nepali Character Recognition </a></strong>
+              <br />
+              <p>
+                 The dataset used for this project comprised of 11,600 grayscale images of handwritten nepali characters. 
+                 The characters are consonants, numerals and vowels.
+                  consonants = "क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह क्ष त्र ज्ञ"
+                  numerals = "० १ २ ३ ४ ५ ६ ७ ८ ९"
+                  vowels = "अ आ इ ई उ ऊ ए ऐ ओ औ अं अः"
+                The dataset comprised of 58 classes( 36 consonants + 10 numerals + 12 vowels). Each class consists of 200 images splitted into training set comprising of 160 images and test set comprising of 40 images.
+                The model used for classification was <a href="https://github.com/poloclub/cnn-explainer/blob/master/tiny-vgg/tiny-vgg.py">TinyVGG</a>. This model can be used to perform classification on the aforementioned 
+                58 classes with 83.30% accuracy.
+              </p>
+            </li>
+            
+            <li>
               <strong
                 >Smart Opinion Classification on Online Forums using SVM and
                 NLP</strong
