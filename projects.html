@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pukar Karki</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Entries Column -->
+        <!-- Projects -->
+        <div class="col-md-8 projects" style="height: 80vh; text-align: justify;">
+          <h2 id="projects">Projects</h2>
+          <ul>
+            <li>
+              <strong><a href="https://nepaliocr.streamlit.app/">Nepali Character Recognition </a></strong>
+              <br />
+              <p>
+                 The dataset used for this project comprised of 11,600 grayscale images of handwritten nepali characters. 
+                 The characters are consonants, numerals and vowels.
+                  consonants = "क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह क्ष त्र ज्ञ"
+                  numerals = "० १ २ ३ ४ ५ ६ ७ ८ ९"
+                  vowels = "अ आ इ ई उ ऊ ए ऐ ओ औ अं अः"
+                The dataset comprised of 58 classes( 36 consonants + 10 numerals + 12 vowels). Each class consists of 200 images splitted into training set comprising of 160 images and test set comprising of 40 images.
+                The model used for classification was <a href="https://github.com/poloclub/cnn-explainer/blob/master/tiny-vgg/tiny-vgg.py">TinyVGG</a>. This model can be used to perform classification on the aforementioned 
+                58 classes with 83.30% accuracy.
+              </p>
+            </li>
+            
+            <li>
+              <strong
+                >Smart Opinion Classification on Online Forums using SVM and
+                NLP</strong
+              ><br />
+              <p>
+                As it is said “opinions” are core to almost all human activities
+                and are key influences of our behaviours. Opinions can be
+                analysed for person’s notion and sentiments. The key focus of
+                the project is collaborative governance and data powered
+                collective intelligence by using the huge amount of data made
+                available by social media. In layman’s term the project is to
+                summarize the acceptance of the given keyword (that might be
+                positive, negative or neutral) based on the discussion on the
+                topic on online discussion forums.
+              </p>
+            </li>
+
+            <li>
+              <strong>Source Code Generation From Operation</strong>
+              <p>
+                This project was developed using AutoIt. It was for automation
+                by generating source code based on GUI operation.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer style="background-color: #222; color: white; text-align: center; padding: 10px 0; margin-top: 20px;">
+    <div class="container">
+        <p>&copy; 2024 Pukar Karki. All rights reserved.</p>
+        <p>
+            <a href="https://www.ioepc.edu.np" style="color: white;">Purwanchal Campus</a> |
+            <a href="https://ioe.tu.edu.np/" style="color: white;">IOE</a>
+        </p>
+    </div>
+    </footer>
+  </body>
+</html>
