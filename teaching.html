@@ -34,23 +34,29 @@
         }
         /* Adjustments for mobile responsiveness */
         @media (max-width: 768px) {
-            .navbar-collapse {
-                position: absolute; /* Position absolute */
-                width: 100%; /* Full width */
-                left: 0;
-                top: 50px; /* Adjust based on navbar height */
-                background-color: #222; /* Match navbar color */
-                z-index: 1000; /* Ensure it stays on top */
-            }
-            .navbar-nav {
-                display: flex;
-                flex-direction: column; /* Stack items vertically */
-                width: 100%; /* Ensure links take full width */
-            }
-            .navbar-nav li {
-                width: 100%; /* Make sure links take full width */
-            }
+        .navbar-collapse {
+            position: absolute;
+            width: 100%; /* Full width */
+            left: 0;
+            top: 50px; /* Adjust based on navbar height */
+            background-color: #222; /* Match navbar color */
+            z-index: 1000; /* Ensure it stays on top */
+            padding: 0; /* Remove any default padding */
         }
+        .navbar-nav {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            width: 100%; /* Ensure links take full width */
+            text-align: center; /* Center the text */
+        }
+        .navbar-nav li {
+            width: 100%; /* Make sure links take full width */
+        }
+        .navbar-nav a {
+            color: white; /* Ensure text is visible */
+        }
+    }
+
     </style>
 </head>
 <body>
