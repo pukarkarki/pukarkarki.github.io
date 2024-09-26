@@ -8,7 +8,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
     <style>
         html, body {
             height: 100%;
@@ -28,8 +27,23 @@
             padding: 10px 0;
         }
         /* Responsive adjustments */
-        .projects {
-            height: auto; /* Allow height to adjust on smaller screens */
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                position: absolute; /* Position absolute */
+                width: 100%; /* Full width */
+                left: 0;
+                top: 50px; /* Adjust based on navbar height */
+                background-color: #222; /* Match navbar color */
+                z-index: 1000; /* Ensure it stays on top */
+            }
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; /* Stack items vertically */
+                width: 100%; /* Ensure links take full width */
+            }
+            .navbar-nav li {
+                width: 100%; /* Make sure links take full width */
+            }
         }
     </style>
 </head>
