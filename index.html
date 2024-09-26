@@ -1,124 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Pukar Karki</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald:700"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-  </head>
-  <body>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1; /* Allow content to grow and push footer down */
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Responsive adjustments */
+        .projects {
+            height: auto; /* Allow height to adjust on smaller screens */
+        }
+    </style>
+</head>
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://karkipukar.com.np">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="https://karkipukar.com.np">Home</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="projects.html">Projects</a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <!-- Entries Column -->
-        <div class="col-md-8" style="height: 80vh">
-          <!-- Main Image -->
-          <img class="img-responsive" src="media/group.jpg" alt="Industry Tour of BEI 2075 Batch" /><br />
+    <div class="container content">
+        <div class="row">
+            <!-- Main Content Column -->
+            <div class="col-md-8" style="height: auto;">
+                <!-- Main Image -->
+                <img class="img-responsive" src="media/group.jpg" alt="Industry Tour of BEI 2075 Batch" /><br />
 
-          <div style="margin-top: 3%; text-align: justify">
-            <p>
-              I am working as an Assistant Professor of Computer Engineering at
-              <a href="https://www.ioepc.edu.np/"
-                >Purwanchal Campus, Institute of Engineering</a
-              >.
-            </p>
-            <p>My current research interests are in:</p>
-            <ul>
-              <li>Deep Learning</li>
-              <li>Natural Language Processing</li>
-              <li>Data Mining</li>
-              <li>Design and Analysis of Algorithms</li>
-            </ul>
-          </div>
-        </div>
+                <div style="margin-top: 3%; text-align: justify;">
+                    <p>
+                        I am working as an Assistant Professor of Computer Engineering at
+                        <a href="https://www.ioepc.edu.np/">Purwanchal Campus, Institute of Engineering</a>.
+                    </p>
+                    <p>My current research interests are in:</p>
+                    <ul>
+                        <li>Deep Learning</li>
+                        <li>Natural Language Processing</li>
+                        <li>Data Mining</li>
+                        <li>Design and Analysis of Algorithms</li>
+                    </ul>
+                </div>
+            </div>
 
-        <!-- Contact Info on the Sidebar -->
-        <div class="col-md-4 info">
-          <div style="font-family: 'Oswald', sans-serif; font-size: 32px">
-            <b>Pukar Karki</b>
-          </div>
-          <br />
-          <div style="font-family: 'Oswald', sans-serif; font-size: 24px">
-            <b>Assistant Professor</b>
-          </div>
-          <br />
-          <p><b>pukar@ioepc.com</b><br /></p>
-          <p>
-            Department of Electronics and Computer Engineering<br />
-            <a href="https://ioepc.edu.np">Purwanchal Campus</a>,
-            <a href="https://ioe.tu.edu.np">IOE</a>, Tribhuvan University<br />
-            56700 Gangalal Marga Tinkune<br />
-            Dharan-8, Sunsari, Nepal<br />
-          </p>
-        </div>
+            <!-- Contact Info Sidebar -->
+            <div class="col-md-4 info">
+                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
+                    <b>Pukar Karki</b>
+                </div>
+                <br />
+                <div style="font-family: 'Oswald', sans-serif; font-size: 24px;">
+                    <b>Assistant Professor</b>
+                </div>
+                <br />
+                <p><b>pukar@ioepc.com</b><br /></p>
+                <p>
+                    Department of Electronics and Computer Engineering<br />
+                    <a href="https://ioepc.edu.np">Purwanchal Campus</a>,
+                    <a href="https://ioe.tu.edu.np">IOE</a>, Tribhuvan University<br />
+                    56700 Gangalal Marga Tinkune<br />
+                    Dharan-8, Sunsari, Nepal<br />
+                </p>
+            </div>
 
-        <!-- Links on the Sidebar -->
-        <div class="col-md-4" style="margin-top: 2%">
-          <dd>
-            <a
-              href="https://scholar.google.com/citations?user=Fy8bz8YAAAAJ&hl=en" target="_blank"
-              >Google Scholar</a
-            >
-          </dd>
-          <dd>
-            <a href="https://www.researchgate.net/profile/Pukar-Karki"
-              >Research Gate</a
-            >
-          </dd>
-          <dd><a href="https://github.com/pukarkarki/">Github</a></dd>
-          <dd><a href="https://np.linkedin.com/in/pukarkarki">LinkedIn</a></dd>
+            <!-- Links Sidebar -->
+            <div class="col-md-4" style="margin-top: 2%;">
+                <dd>
+                    <a href="https://scholar.google.com/citations?user=Fy8bz8YAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                </dd>
+                <dd>
+                    <a href="https://www.researchgate.net/profile/Pukar-Karki">Research Gate</a>
+                </dd>
+                <dd><a href="https://github.com/pukarkarki/">Github</a></dd>
+                <dd><a href="https://np.linkedin.com/in/pukarkarki">LinkedIn</a></dd>
+            </div>
         </div>
-      </div>
     </div>
-     <!-- Footer -->
-     <footer style="background-color: #222; color: white; text-align: center; padding: 10px 0; margin-top: 20px;">
-      <div class="container">
-          <p>&copy; 2024 Pukar Karki. All rights reserved.</p>
-          <p>
-              <a href="https://www.ioepc.edu.np" style="color: white;">Purwanchal Campus</a> |
-              <a href="https://ioe.tu.edu.np/" style="color: white;">IOE</a>
-          </p>
-      </div>
-  </footer>
-  </body>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pukar Karki. All rights reserved.</p>
+            <p>
+                <a href="https://www.ioepc.edu.np" style="color: white;">Purwanchal Campus</a> |
+                <a href="https://ioe.tu.edu.np/" style="color: white;">IOE</a>
+            </p>
+        </div>
+    </footer>
+</body>
 </html>
