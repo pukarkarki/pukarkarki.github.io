@@ -19,7 +19,7 @@
             flex-direction: column;
         }
         .content {
-            flex: 1; /* Allow content to grow and push footer down */
+            flex: 1;
         }
         footer {
             background-color: #222;
@@ -29,34 +29,14 @@
         }
         .teaching {
             margin-top: 20px;
-            overflow-y: auto; /* Enable scrolling if content exceeds height */
-            max-height: 80vh; /* Set max height for the teaching section */
         }
-        /* Adjustments for mobile responsiveness */
-        @media (max-width: 768px) {
-        .navbar-collapse {
-            position: absolute;
-            width: 100%; /* Full width */
-            left: 0;
-            top: 50px; /* Adjust based on navbar height */
-            background-color: #222; /* Match navbar color */
-            z-index: 1000; /* Ensure it stays on top */
-            padding: 0; /* Remove any default padding */
+        .course-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
-        .navbar-nav {
-            display: flex;
-            flex-direction: column; /* Stack items vertically */
-            width: 100%; /* Ensure links take full width */
-            text-align: center; /* Center the text */
-        }
-        .navbar-nav li {
-            width: 100%; /* Make sure links take full width */
-        }
-        .navbar-nav a {
-            color: white; /* Ensure text is visible */
-        }
-    }
-
     </style>
 </head>
 <body>
@@ -86,10 +66,25 @@
     <!-- Page Content -->
     <div class="container content">
         <div class="row">
-            <!-- Teaching Section -->
+            <!-- Training Section -->
             <div class="col-md-8 teaching">
-                <h2 id="teaching">Training</h2>
-                <strong>Coming soon...</strong>
+                <div class="course-box">
+                    <h3>Course: Machine Learning with Python</h3>
+                    <p>This is a hands-on, project-based training designed to equip participants with essential Machine Learning skills using Python.</p>
+                    <ul>
+                        <li>📅 <strong>Start Date:</strong> 8th Falgun 2081</li>
+                        <li>⏳ <strong>Duration:</strong> 1 Month (Evening Shift)</li>
+                        <li>💰 <strong>Fee:</strong> NRS. 5000/-</li>
+                    </ul>
+                    <h3>What You Will Learn</h3>
+                    <ul>
+                        <li>✅ Machine Learning Algorithms</li>
+                        <li>✅ Data Preprocessing & Visualization</li>
+                        <li>✅ Model Building with Python</li>
+                        <li>✅ Real-World Applications & Projects</li>
+                    </ul>
+                    <p>Reserve your spot today! Click <a href="https://forms.gle/iVTZB5PxjXsWQzuw9"> here </a> to Register!</p>
+                </div>
             </div>
         </div>
     </div>
