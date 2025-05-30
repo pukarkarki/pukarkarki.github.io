@@ -4,6 +4,7 @@
     <title>Pukar Karki</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pukar Karki's publication list and academic contributions." />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -18,7 +19,7 @@
             flex-direction: column;
         }
         .content {
-            flex: 1; /* Allow content to grow and push footer down */
+            flex: 1;
         }
         footer {
             background-color: #222;
@@ -28,36 +29,38 @@
         }
         .publication {
             margin-top: 20px;
-            overflow-y: auto; /* Enable scrolling if content exceeds height */
-            max-height: 80vh; /* Set max height for the publications section */
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+        .publication li {
+            text-align: justify;
         }
         @media (max-width: 768px) {
-        .navbar-collapse {
-            position: absolute;
-            width: 100%; /* Full width */
-            left: 0;
-            top: 50px; /* Adjust based on navbar height */
-            background-color: #222; /* Match navbar color */
-            z-index: 1000; /* Ensure it stays on top */
-            padding: 0; /* Remove any default padding */
+            .navbar-collapse {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 50px;
+                background-color: #222;
+                z-index: 1000;
+                padding: 0;
+            }
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            .navbar-nav li {
+                width: 100%;
+            }
+            .navbar-nav a {
+                color: white;
+            }
         }
-        .navbar-nav {
-            display: flex;
-            flex-direction: column; /* Stack items vertically */
-            width: 100%; /* Ensure links take full width */
-            text-align: center; /* Center the text */
-        }
-        .navbar-nav li {
-            width: 100%; /* Make sure links take full width */
-        }
-        .navbar-nav a {
-            color: white; /* Ensure text is visible */
-        }
-    }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -80,47 +83,44 @@
         </div>
     </nav>
 
-    <!-- Page Content -->
     <div class="container content">
         <div class="row">
-            <!-- Publications Section -->
             <div class="col-md-8 publication">
                 <h2 id="publications">Publications</h2>
                 <ul>
                     <li class="paper">
                         Sangroula, P., Mehta, A. K., Thapa, A., Chaudhary, A., Pokharel, A., & <strong>Karki, P.</strong> (2025). 
-                        <a href="https://doi.org/10.1109/ICICT64420.2025.11005123">Comparative Analysis of Classification Algorithm for Hair Fall in Survey Based Dataset.</a> 
+                        <a href="https://doi.org/10.1109/ICICT64420.2025.11005123" title="Read full paper">Comparative Analysis of Classification Algorithm for Hair Fall in Survey Based Dataset.</a> 
                         In Proceedings of the 2025 International Conference on Information and Communication Technology (ICICT) (pp. 267–271).
                     </li>
                     <br>
                     <li class="paper">
                         Karki, S., <strong>Karki, P.</strong>, Shrestha, B. L., & Jha, T. N. (2025). 
-                         <a href="https://doi.org/10.1109/ICICT64420.2025.11005216">Smaller Large Language Models for Text-To-SQL: Performance Analysis and Optimal Performance.</a> 
-                         In Proceedings of the 2025 International Conference on Information and Communication Technology (ICICT) (pp. 1–7).
+                        <a href="https://doi.org/10.1109/ICICT64420.2025.11005216" title="Read full paper">Smaller Large Language Models for Text-To-SQL: Performance Analysis and Optimal Performance.</a> 
+                        In Proceedings of the 2025 International Conference on Information and Communication Technology (ICICT) (pp. 1–7).
                     </li>
-                     <br>
+                    <br>
                     <li class="paper">
                         Shrestha, G., Thing, N., Dhakal, P., Dahal, P., <strong>Karki, P.</strong>, & Guragain, M. K. (2024). 
-                        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-025-C1-4-63.pdf">Nepali Sign Language Letter Detection and Finger Spelling Using Mediapipe and CNN.</a> 
+                        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-025-C1-4-63.pdf" title="Read full paper">Nepali Sign Language Letter Detection and Finger Spelling Using Mediapipe and CNN.</a> 
                         In Proceedings of the 15th IOE Graduate Conference (pp. 166–170). Institute of Engineering, Tribhuvan University.
                     </li>
                     <br>
                     <li class="paper">
                         Gajurel, K., Baniya, M. K., Mahato, K., Kathet, M., Lingden, S., & <strong>Karki, P.</strong> (2024). 
-                        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-022-C1-1-34.pdf">Automatic Number Plate Detection and Recognition Using YOLOv8 and CNN.</a> 
+                        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-022-C1-1-34.pdf" title="Read full paper">Automatic Number Plate Detection and Recognition Using YOLOv8 and CNN.</a> 
                         In Proceedings of the 15th IOE Graduate Conference (pp. 143–149). Institute of Engineering, Tribhuvan University.
                     </li>
                     <br>
                     <li class="paper">
                         Lingden, S., <strong>Karki, P.</strong>, Verma, A., & Guragai, M. K. (2023). 
-                        <a href="http://conference.ioe.edu.np/publications/ioegc14/IOEGC-14-233-PS3-038-797.pdf">LSTM Based Time Series Forecasting of Dengue.</a> 
+                        <a href="http://conference.ioe.edu.np/publications/ioegc14/IOEGC-14-233-PS3-038-797.pdf" title="Read full paper">LSTM Based Time Series Forecasting of Dengue.</a> 
                         In Proceedings of the 14th IOE Graduate Conference (pp. 1592–1597). Institute of Engineering, Tribhuvan University.
                     </li>
                     <br>
                     <li class="paper">
                         <strong>Pukar Karki.</strong> (2022). 
-                        <a href="http://dx.doi.org/10.5281/zenodo.7789572">Analysis of Data Mining Techniques Used For Classification [Zenodo].</a> 
-                        https://doi.org/10.5281/zenodo.7789572
+                        <a href="http://dx.doi.org/10.5281/zenodo.7789572" title="Read full paper">Analysis of Data Mining Techniques Used For Classification [Zenodo].</a> 
                     </li>
                     <br>
                 </ul>
@@ -128,7 +128,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Pukar Karki. All rights reserved.</p>
