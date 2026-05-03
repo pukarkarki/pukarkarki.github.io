@@ -44,6 +44,12 @@ body {
   color: white;
 }
 
+.nav-links a.active {
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+}
 /* Layout */
 .container {
   width: 90%;
