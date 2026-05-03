@@ -1,100 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pukar Karki</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Pukar Karki's publication list and academic contributions." />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Pukar Karki</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="https://karkipukar.com.np">Home</a></li>
-                    <li class="active"><a href="publications.html">Publications</a></li>
-                    <li><a href="teaching.html">Teaching</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="training.html">Training</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <div class="container content">
-        <div class="row">
-            <div class="col-md-12 publication">
-                <h2 id="publications">Publications</h2>
-                <ul>
-                    <li class="paper">
-                        Sitaula, O., Sharma, P., <strong>Karki, P.</strong>, Devkota, S., Sah, S. K., & Sangroula, P. (2025). 
-                        <a href="https://doi.org/10.3126/joeis.v4i1.81597" title="Read full paper">Unusual Activity Detection with Alert System Using Vision Transformer.</a>
-                            Journal of Engineering Issues and Solutions, 4(1), (pp. 408–421). 
-                    </li>
-                    <br>
-                    
-                    <li class="paper">
-                        Sangroula, P., Mehta, A. K., Thapa, A., Chaudhary, A., Pokharel, A., & <strong>Karki, P.</strong> (2025). 
-                        <a href="https://doi.org/10.1109/ICICT64420.2025.11005123" title="Read full paper">Comparative Analysis of Classification Algorithm for Hair Fall in Survey Based Dataset.</a> 
-                        In Proceedings of the 2025 International Conference on Information and Communication Technology (ICICT) (pp. 267–271).
-                    </li>
-                    <br>
-                    <li class="paper">
-                        Karki, S., <strong>Karki, P.</strong>, Shrestha, B. L., & Jha, T. N. (2025). 
-                        <a href="https://doi.org/10.1109/ICICT64420.2025.11005216" title="Read full paper">Smaller Large Language Models for Text-To-SQL: Performance Analysis and Optimal Performance.</a> 
-                        In Proceedings of the 2025 International Conference on Information and Communication Technology (ICICT) (pp. 1–7).
-                    </li>
-                    <br>
-                    <li class="paper">
-                        Shrestha, G., Thing, N., Dhakal, P., Dahal, P., <strong>Karki, P.</strong>, & Guragain, M. K. (2024). 
-                        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-025-C1-4-63.pdf" title="Read full paper">Nepali Sign Language Letter Detection and Finger Spelling Using Mediapipe and CNN.</a> 
-                        In Proceedings of the 15th IOE Graduate Conference (pp. 166–170). Institute of Engineering, Tribhuvan University.
-                    </li>
-                    <br>
-                    <li class="paper">
-                        Gajurel, K., Baniya, M. K., Mahato, K., Kathet, M., Lingden, S., & <strong>Karki, P.</strong> (2024). 
-                        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-022-C1-1-34.pdf" title="Read full paper">Automatic Number Plate Detection and Recognition Using YOLOv8 and CNN.</a> 
-                        In Proceedings of the 15th IOE Graduate Conference (pp. 143–149). Institute of Engineering, Tribhuvan University.
-                    </li>
-                    <br>
-                    <li class="paper">
-                        Lingden, S., <strong>Karki, P.</strong>, Verma, A., & Guragai, M. K. (2023). 
-                        <a href="http://conference.ioe.edu.np/publications/ioegc14/IOEGC-14-233-PS3-038-797.pdf" title="Read full paper">LSTM Based Time Series Forecasting of Dengue.</a> 
-                        In Proceedings of the 14th IOE Graduate Conference (pp. 1592–1597). Institute of Engineering, Tribhuvan University.
-                    </li>
-                    <br>
-                    <li class="paper">
-                        <strong>Pukar Karki.</strong> (2022). 
-                        <a href="http://dx.doi.org/10.5281/zenodo.7789572" title="Read full paper">Analysis of Data Mining Techniques Used For Classification </a>[Zenodo].
-                    </li>
-                    <br>
-                </ul>
-            </div>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="nav-container">
+        <div class="brand">Pukar Karki</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html" class="active">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html">Projects</a>
+            <a href="training.html">Training</a>
         </div>
     </div>
+</div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Pukar Karki. All rights reserved.</p>
-            <p>
-                <a href="https://www.ioepc.edu.np" style="color: white;">Purwanchal Campus</a> |
-                <a href="https://ioe.tu.edu.np/" style="color: white;">IOE</a>
-            </p>
-        </div>
-    </footer>
+<!-- Content -->
+<div class="container">
+    <div class="paper">
+        Sitaula, O., Sharma, P., <strong>Karki, P.</strong>, Devkota, S., Sah, S. K., & Sangroula, P. (2025).
+        <a href="https://doi.org/10.3126/joeis.v4i1.81597" target="_blank">
+        Unusual Activity Detection with Alert System Using Vision Transformer</a>.
+        Journal of Engineering Issues and Solutions, 4(1), 408–421.
+    </div>
+
+    <div class="paper">
+        Sangroula, P., Mehta, A. K., Thapa, A., Chaudhary, A., Pokharel, A., & <strong>Karki, P.</strong> (2025).
+        <a href="https://doi.org/10.1109/ICICT64420.2025.11005123" target="_blank">
+        Comparative Analysis of Classification Algorithm for Hair Fall in Survey Based Dataset</a>.
+        Proceedings of ICICT 2025, 267–271.
+    </div>
+
+    <div class="paper">
+        Karki, S., <strong>Karki, P.</strong>, Shrestha, B. L., & Jha, T. N. (2025).
+        <a href="https://doi.org/10.1109/ICICT64420.2025.11005216" target="_blank">
+        Smaller Large Language Models for Text-To-SQL: Performance Analysis</a>.
+        Proceedings of ICICT 2025, 1–7.
+    </div>
+
+    <div class="paper">
+        Shrestha, G., Thing, N., Dhakal, P., Dahal, P., <strong>Karki, P.</strong>, & Guragain, M. K. (2024).
+        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-025-C1-4-63.pdf" target="_blank">
+        Nepali Sign Language Letter Detection and Finger Spelling Using Mediapipe and CNN</a>.
+        IOE Graduate Conference, 166–170.
+    </div>
+
+    <div class="paper">
+        Gajurel, K., Baniya, M. K., Mahato, K., Kathet, M., Lingden, S., & <strong>Karki, P.</strong> (2024).
+        <a href="http://conference.ioe.edu.np/publications/ioegc15/IOEGC-15-022-C1-1-34.pdf" target="_blank">
+        Automatic Number Plate Detection Using YOLOv8 and CNN</a>.
+        IOE Graduate Conference, 143–149.
+    </div>
+
+    <div class="paper">
+        Lingden, S., <strong>Karki, P.</strong>, Verma, A., & Guragai, M. K. (2023).
+        <a href="http://conference.ioe.edu.np/publications/ioegc14/IOEGC-14-233-PS3-038-797.pdf" target="_blank">
+        LSTM Based Time Series Forecasting of Dengue</a>.
+        IOE Graduate Conference, 1592–1597.
+    </div>
+
+    <div class="paper">
+        <strong>Pukar Karki</strong> (2022).
+        <a href="http://dx.doi.org/10.5281/zenodo.7789572" target="_blank">
+        Analysis of Data Mining Techniques Used for Classification</a>.
+        Zenodo.
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Pukar Karki</p>
+    <p>
+        <a href="https://www.ioepc.edu.np" style="color:#ccc;">Purwanchal Campus</a> |
+        <a href="https://ioe.tu.edu.np/" style="color:#ccc;">IOE</a>
+    </p>
+</footer>
+
 </body>
 </html>

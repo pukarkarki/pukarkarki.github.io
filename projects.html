@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pukar Karki</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/styles.css">
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="https://karkipukar.com.np">Home</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="teaching.html">Teaching</a></li>
-                    <li class="active"><a href="projects.html">Projects</a></li>
-                    <li><a href="training.html">Training</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Pukar Karki</title>
 
-    <!-- Page Content -->
-    <div class="container content">
-        <div class="row">
-            <!-- Projects -->
-            <div class="col-md-12 projects" style="text-align: justify;">
-                <h2 id="projects">Projects</h2>
-                <ul>
-                    <li>
-                        <strong><a href="https://merosathi.streamlit.app/">Image Captioning with Nepali Translation and Speech</a></strong>
-                        <br />
-                        <p>
-                            This project takes an image, creates an English caption for it, translates that caption into Nepali, and then reads it out loud. You can upload a picture or use the camera. 
-                            The app uses a BLIP model for captioning, Google Translator for translation, and gTTS for speech. It works in one place so you can see the image, read the text, and hear the audio.
-                        </p>
-                    </li>
-                    <li>
-                        <strong><a href="https://nepaliocr.streamlit.app/">Nepali Character Recognition</a></strong>
-                        <br />
-                        <p>
-                            The dataset used for this project comprised of 11,600 grayscale images of handwritten Nepali characters.
-                            The characters are consonants, numerals, and vowels. 
-                            Consonants: "क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह क्ष त्र ज्ञ"
-                            Numerals: "० १ २ ३ ४ ५ ६ ७ ८ ९"
-                            Vowels: "अ आ इ ई उ ऊ ए ऐ ओ औ अं अः"
-                            The dataset comprised of 58 classes (36 consonants + 10 numerals + 12 vowels). Each class consists of 200 images split into a training set (160 images) and a test set (40 images).
-                            The model used for classification was <a href="https://github.com/poloclub/cnn-explainer/blob/master/tiny-vgg/tiny-vgg.py">TinyVGG</a>. This model can classify the aforementioned 58 classes with 83.30% accuracy.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Smart Opinion Classification on Online Forums using SVM and NLP</strong>
-                        <br />
-                        <p>
-                            As it is said, “opinions” are core to almost all human activities and are key influences on our behaviors. Opinions can be analyzed for a person’s notion and sentiments. The key focus of the project is collaborative governance and data-powered collective intelligence using the huge amount of data made available by social media. In layman's terms, the project summarizes the acceptance of a given keyword (that might be positive, negative, or neutral) based on discussions on online forums.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Source Code Generation From Operation</strong>
-                        <p>
-                            This project was developed using AutoIt. It was for automation by generating source code based on GUI operations.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="nav-container">
+        <div class="brand">Pukar Karki</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="training.html">Training</a>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Pukar Karki. All rights reserved.</p>
-            <p>
-                <a href="https://www.ioepc.edu.np" style="color: white;">Purwanchal Campus</a> |
-                <a href="https://ioe.tu.edu.np/" style="color: white;">IOE</a>
-            </p>
-        </div>
-    </footer>
+<!-- Content -->
+<div class="container">
+    <div class="project">
+        <h3>
+            <a href="https://merosathi.streamlit.app/" target="_blank">
+                Image Captioning with Nepali Translation and Speech
+            </a>
+        </h3>
+        <p>
+            This project generates a caption for an image, translates it into Nepali, and reads it aloud.
+            It supports image upload and camera input. It uses a BLIP model for captioning, Google Translate
+            for translation, and gTTS for speech output.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>
+            <a href="https://nepaliocr.streamlit.app/" target="_blank">
+                Nepali Character Recognition
+            </a>
+        </h3>
+        <p>
+            This system recognizes handwritten Nepali characters using a CNN model (TinyVGG).
+            It classifies 58 classes including vowels, consonants, and numerals.
+            The model achieves around 83.3% accuracy on the dataset.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Smart Opinion Classification on Online Forums using SVM and NLP</h3>
+        <p>
+            This project analyzes user opinions from online discussions.
+            It classifies sentiment as positive, negative, or neutral using NLP and SVM.
+            It is designed for understanding public opinion from social media text.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Source Code Generation from Operations</h3>
+        <p>
+            This project uses AutoIt to generate source code based on GUI operations.
+            It focuses on automating repetitive programming tasks through interface actions.
+        </p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Pukar Karki</p>
+    <p>
+        <a href="https://www.ioepc.edu.np" style="color:#ccc;">Purwanchal Campus</a> |
+        <a href="https://ioe.tu.edu.np/" style="color:#ccc;">IOE</a>
+    </p>
+</footer>
+
 </body>
 </html>

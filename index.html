@@ -1,105 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pukar Karki</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="https://karkipukar.com.np">Home</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="teaching.html">Teaching</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="training.html">Training</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Content -->
-    <div class="container content">
-        <div class="row">
-            <!-- Main Content Column -->
-            <div class="col-md-8" style="height: auto;">
-                <!-- Main Image -->
-                <img class="img-responsive" src="media/group.jpg" alt = "Image" title="Industry Tour of BEI 2018 Batch" /><br />
-                <div style="margin-top: 3%; text-align: justify;">
-                    <p>
-                        I am working as an Assistant Professor of Computer Engineering at
-                        <a href="https://www.ioepc.edu.np/">Purwanchal Campus, Institute of Engineering</a>.
-                    </p>
-                    <p>My current research interests are in:</p>
-                    <ul>
-                        <li>Deep Learning</li>
-                        <li>Natural Language Processing</li>
-                        <li>Data Mining</li>
-                        <li>Design and Analysis of Algorithms</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Contact Info Sidebar -->
-            <div class="col-md-4 info">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
-                    <b>Pukar Karki</b>
-                </div>
-                <br />
-                <div style="font-family: 'Oswald', sans-serif; font-size: 24px;">
-                    <b>Assistant Professor</b>
-                </div>
-                <br />
-                <p><b>pukar@ioepc.com.np</b><br /></p>
-                <p>
-                    Department of Electronics and Computer Engineering<br />
-                    <a href="https://ioepc.edu.np">Purwanchal Campus</a>,
-                    <a href="https://ioe.tu.edu.np">IOE</a>, Tribhuvan University<br />
-                    56700 Gangalal Marga Tinkune<br />
-                    Dharan-8, Sunsari, Nepal<br />
-                </p>
-            </div>
-
-            <!-- Links Sidebar -->
-            <div class="col-md-4" style="margin-top: 2%;">
-                <dd>
-                    <a href="https://scholar.google.com/citations?user=Fy8bz8YAAAAJ&hl=en" target="_blank">Google Scholar</a>
-                </dd>
-                <dd>
-                    <a href="https://www.researchgate.net/profile/Pukar-Karki">Research Gate</a>
-                </dd>
-                <dd><a href="https://github.com/pukarkarki/">Github</a></dd>
-                <dd><a href="https://np.linkedin.com/in/pukarkarki">LinkedIn</a></dd>
-            </div>
+<!-- Navbar -->
+<div class="navbar">
+    <div class="nav-container">
+        <div class="brand">Pukar Karki</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html">Projects</a>
+            <a href="training.html">Training</a>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Pukar Karki. All rights reserved.</p>
+<!-- Content -->
+<div class="container">
+
+    <!-- Main -->
+    <div class="main">
+        <div class="hero">
+            <img src="media/group.jpg" alt="Industry Tour">
+        </div>
+
+        <h2>About</h2>
+        <p>
+            I am an Assistant Professor of Computer Engineering at Purwanchal Campus,
+            Institute of Engineering, Tribhuvan University.
+        </p>
+        <p>
+            My work focuses on machine learning and data-driven systems. I teach undergraduate
+            courses and supervise student research.
+        </p>
+
+        <h3>Research Interests</h3>
+        <div class="tags">
+            <span>Deep Learning</span>
+            <span>Natural Language Processing</span>
+            <span>Data Mining</span>
+            <span>Algorithms</span>
+        </div>
+
+        <h3 style="margin-top: 30px;">Selected Work</h3>
+        <ul>
+            <li>Paper title – Conference/Journal</li>
+            <li>Another paper – Conference/Journal</li>
+        </ul>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="card">
+            <h3>Pukar Karki</h3>
+            <p><strong>Assistant Professor</strong></p>
+            <p>pukar@ioepc.com.np</p>
             <p>
-                <a href="https://www.ioepc.edu.np" style="color: white;">Purwanchal Campus</a> |
-                <a href="https://ioe.tu.edu.np/" style="color: white;">IOE</a>
+                Department of Electronics and Computer Engineering<br>
+                Purwanchal Campus, IOE<br>
+                Tribhuvan University<br>
+                Dharan, Nepal
             </p>
         </div>
-    </footer>
+
+        <div class="card">
+            <h3>Links</h3>
+            <a href="https://scholar.google.com/citations?user=Fy8bz8YAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Pukar-Karki" target="_blank">ResearchGate</a>
+            <a href="https://github.com/pukarkarki/" target="_blank">GitHub</a>
+            <a href="https://np.linkedin.com/in/pukarkarki" target="_blank">LinkedIn</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Pukar Karki</p>
+    <p>
+        <a href="https://www.ioepc.edu.np" style="color:#ccc;">Purwanchal Campus</a> |
+        <a href="https://ioe.tu.edu.np/" style="color:#ccc;">IOE</a>
+    </p>
+</footer>
+
 </body>
 </html>
