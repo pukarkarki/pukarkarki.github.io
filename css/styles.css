@@ -167,3 +167,36 @@ footer {
   margin-top: 20px;
   font-size: 18px;
 }
+/* ===== mobile navbar fix (non-destructive) ===== */
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* mobile only */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* hide original horizontal menu */
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: inherit; /* keeps your original color */
+  }
+
+  /* show when clicked */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 12px 0;
+  }
+}

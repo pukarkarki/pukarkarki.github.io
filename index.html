@@ -18,11 +18,15 @@
       <!-- Navbar -->
       <div class="navbar">
         <div class="nav-container">
-           <div class="brand">
-            <a href="https://karkipukar.com.np" style="color: white; text-decoration: none">
+          <div class="brand">
+            <a
+              href="https://karkipukar.com.np"
+              style="color: white; text-decoration: none"
+            >
               Pukar Karki
             </a>
           </div>
+          <div class="menu-toggle" id="menu-toggle">☰</div>
           <div class="nav-links">
             <a href="#" class="active">Home</a>
             <a href="publications.html">Publications</a>
@@ -38,7 +42,11 @@
         <!-- Main -->
         <div class="main">
           <div class="hero">
-            <img src="media/group.jpg" alt = "Industry Tour of BEI 2018 Batch" title="Industry Tour of BEI 2018 Batch" />
+            <img
+              src="media/group.jpg"
+              alt="Industry Tour of BEI 2018 Batch"
+              title="Industry Tour of BEI 2018 Batch"
+            />
           </div>
 
           <h2>About</h2>
@@ -58,7 +66,7 @@
             <span>Data Mining</span>
             <span>Algorithms</span>
           </div>
-          
+
           <!-- <h3 style="margin-top: 30px">Selected Work</h3>
           <ul>
             <li>Paper title – Conference/Journal</li>
@@ -112,5 +120,13 @@
         <a href="https://ioe.tu.edu.np/" style="color: #ccc">IOE</a>
       </p>
     </footer>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
