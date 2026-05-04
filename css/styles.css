@@ -179,29 +179,46 @@ footer {
 /* mobile only */
 @media (max-width: 768px) {
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
   .menu-toggle {
-  position: relative;
-  z-index: 2000;
+    display: block;
   }
 
-.navbar {
-  position: relative;
-  z-index: 1000;
+  /* make navbar a positioning parent */
+  .navbar {
+    position: relative;
   }
-  /* hide original horizontal menu */
+
+  /* dropdown menu */
   .nav-links {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
+    background: #111;
+
+    display: none;
     flex-direction: column;
-    background: inherit; /* keeps your original color */
+    text-align: center;
   }
 
-  /* show when clicked */
   .nav-links.active {
     display: flex;
   }
 
   .nav-links a {
-    padding: 12px 0;
+    margin: 0;
+    padding: 15px;
+    border-top: 1px solid #333;
   }
+}
 }
