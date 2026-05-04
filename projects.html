@@ -18,12 +18,16 @@
       <!-- Navbar -->
       <div class="navbar">
         <div class="nav-container">
-           <div class="brand">
-            <a href="https://karkipukar.com.np" style="color: white; text-decoration: none">
+          <div class="brand">
+            <a
+              href="https://karkipukar.com.np"
+              style="color: white; text-decoration: none"
+            >
               Pukar Karki
             </a>
           </div>
-          <div class="nav-links">
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+          <div class="nav-links" id="nav-links">
             <a href="https://karkipukar.com.np">Home</a>
             <a href="publications.html">Publications</a>
             <a href="teaching.html">Teaching</a>
@@ -75,5 +79,13 @@
         <a href="https://ioe.tu.edu.np/" style="color: #ccc">IOE</a>
       </p>
     </footer>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
