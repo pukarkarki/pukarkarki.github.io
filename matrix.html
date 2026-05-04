@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wake up, Neo...</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: #00ff00;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+#terminal {
+  padding: 20px;
+}
+
+.msg {
+  margin: 3px 0;
+  opacity: 0;
+  animation: fadeIn 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+#line {
+  display: flex;
+  margin-top: 10px;
+}
+
+#prompt {
+  margin-right: 6px;
+}
+
+#input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 16px;
+  width: 100%;
+}
+
+canvas {
+  display: none;
+}
+
+/* stronger matrix glitch */
+.glitch {
+  animation: glitch 0.1s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); filter: hue-rotate(0deg); }
+  25% { transform: translate(-3px, 2px); filter: hue-rotate(90deg); }
+  50% { transform: translate(3px, -2px); filter: hue-rotate(180deg); }
+  75% { transform: translate(-2px, 1px); filter: hue-rotate(270deg); }
+  100% { transform: translate(0); filter: hue-rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div id="terminal">
+  <div id="output"></div>
+
+  <div id="line">
+    <span id="prompt">></span>
+    <input id="input" autofocus />
+  </div>
+</div>
+
+<canvas id="matrix"></canvas>
+
+<script>
+const input = document.getElementById("input");
+const output = document.getElementById("output");
+const terminal = document.getElementById("terminal");
+const canvas = document.getElementById("matrix");
+const ctx = canvas.getContext("2d");
+
+let interval = null;
+let inMatrix = false;
+
+/* ---------------- MATRIX STYLE FEED ---------------- */
+
+const feed = [
+  "SYSTEM INITIALIZING...",
+  "ACCESSING MEMORY...",
+  "USER DETECTED...",
+  "Wake up, Neo...",
+  "The Matrix has you...",
+  "Follow the white rabbit.",
+  "Knock, knock, Neo."
+];
+
+let i = 0;
+
+function sendMessage(text, cb) {
+  const div = document.createElement("div");
+  div.className = "msg";
+  output.appendChild(div);
+
+  let j = 0;
+
+  function type() {
+    if (j < text.length) {
+      div.innerHTML += text[j];
+      j++;
+      setTimeout(type, 25);
+    } else {
+      cb && cb();
+    }
+  }
+
+  type();
+}
+
+function runFeed() {
+  if (i < feed.length) {
+    setTimeout(() => {
+      sendMessage(">> " + feed[i], () => {
+        i++;
+        runFeed();
+      });
+    }, 700);
+  } else {
+    setTimeout(showChoice, 500);
+  }
+}
+
+runFeed();
+
+/* ---------------- CHOICE ---------------- */
+
+function showChoice() {
+  const div = document.createElement("div");
+  div.className = "msg";
+  div.innerHTML = `
+<br>
+[ SYSTEM PROMPT ]<br>
+Select action:<br><br>
+<span style="color:red">red</span>  -> accept reality<br>
+<span style="color:blue">blue</span> -> disconnect<br>
+<span style="color:gray">exit</span> -> terminate session<br>
+<span style="color:yellow">help</span> -> commands<br><br>
+`;
+  output.appendChild(div);
+}
+
+/* ---------------- INPUT ---------------- */
+
+input.addEventListener("keydown", (e) => {
+  if (e.key !== "Enter") return;
+
+  const cmd = input.value.trim().toLowerCase();
+  output.innerHTML += "<div class='msg'>> " + cmd + "</div>";
+  input.value = "";
+
+  handle(cmd);
+});
+
+/* ESC ALWAYS WORKS */
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && inMatrix) {
+    stopMatrix();
+  }
+});
+
+/* ---------------- COMMANDS ---------------- */
+
+function handle(cmd) {
+
+  if (cmd === "red") {
+    glitchBoot();
+  }
+
+  else if (cmd === "blue") {
+    window.location.href = "https://www.karkipukar.com.np";
+  }
+
+  else if (cmd === "exit") {
+    window.location.href = "https://www.karkipukar.com.np";
+  }
+
+  else if (cmd === "help") {
+    output.innerHTML += `
+      <div class="msg">
+      AVAILABLE COMMANDS:<br>
+      red   - accept system<br>
+      blue  - exit system<br>
+      exit  - terminate<br>
+      help  - show commands<br>
+      </div>
+    `;
+  }
+
+  else {
+    output.innerHTML += "<div class='msg'>UNKNOWN INPUT</div>";
+  }
+}
+
+/* ---------------- GLITCH SEQUENCE ---------------- */
+
+function glitchBoot() {
+  terminal.classList.add("glitch");
+
+  output.innerHTML += "<div class='msg'>>> OVERRIDE DETECTED</div>";
+  output.innerHTML += "<div class='msg'>>> REALITY SHIFTING...</div>";
+
+  setTimeout(() => {
+    terminal.classList.remove("glitch");
+    startMatrix();
+  }, 1000);
+}
+
+/* ---------------- MATRIX ---------------- */
+
+const letters = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+function startMatrix() {
+  inMatrix = true;
+
+  terminal.style.display = "none";
+  canvas.style.display = "block";
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const fontSize = 14;
+  const columns = Math.floor(canvas.width / fontSize);
+  const drops = Array(columns).fill(1);
+
+  function draw() {
+    ctx.fillStyle = "rgba(0,0,0,0.08)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "#00ff00";
+    ctx.font = fontSize + "px monospace";
+
+    for (let k = 0; k < drops.length; k++) {
+      const text = letters[Math.floor(Math.random() * letters.length)];
+      ctx.fillText(text, k * fontSize, drops[k] * fontSize);
+
+      if (drops[k] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[k] = 0;
+      }
+
+      drops[k]++;
+    }
+  }
+
+  interval = setInterval(draw, 33);
+}
+
+/* ---------------- STOP ---------------- */
+
+function stopMatrix() {
+  inMatrix = false;
+  clearInterval(interval);
+  canvas.style.display = "none";
+  terminal.style.display = "block";
+}
+</script>
+
+</body>
+</html>
