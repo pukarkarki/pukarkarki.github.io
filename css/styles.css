@@ -180,9 +180,14 @@ footer {
 @media (max-width: 768px) {
 
   .menu-toggle {
-    display: block;
+  position: relative;
+  z-index: 2000;
   }
 
+.navbar {
+  position: relative;
+  z-index: 1000;
+  }
   /* hide original horizontal menu */
   .nav-links {
     display: none;
